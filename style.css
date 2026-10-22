@@ -1,0 +1,502 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 120px;
+  box-shadow: 0px 0px 15px 0px #000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header .logo i{
+  font-size: 2em;
+}
+
+header .logo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header nav ul li{
+  transition-duration: 0.2s;
+}
+
+header nav ul li:nth-child(1){
+  background-color:#ffffff1a;
+  padding: 10px 3px;
+  border-radius: 5px;
+}
+
+header nav ul li:hover{
+  background-color: #ffffff1a;
+  padding: 10px 0px;
+  border-radius: 5px;
+  transform: translateY(-5%);
+}
+
+.hero{
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 100vh;
+}
+
+.hero .content{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  padding: 0 10em;
+}
+
+.hero .content .content-1{
+  line-height: 1.5;
+}
+
+.hero .content-1 h1{
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+
+.hero .content-1 p{
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.hero .content-1 a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition-duration: 0.2s;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.hero .content-1 .button a:nth-child(1){
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.hero .content-1 .button a:nth-child(1):hover{
+    box-shadow: 0px 5px 5px 0px #0000007e;
+    transform: translateY(-2%);
+}
+
+.hero .content-1 .button a:nth-child(2):hover{
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+    transform: translateY(-2%);
+}
+
+.hero .content-1 .button{
+  gap: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.hero .content .content-2{
+  display: flex;
+  gap: 3em;
+}
+
+.hero .content-2 div {
+  background-color: #ffffff1a;
+  padding: 2em;
+  border-radius: 5px;
+  position: relative;
+  animation: float 5s ease-in-out infinite;
+}
+
+.hero .content-2 .float-1 {
+  animation-delay: 0s;
+}
+
+.hero .content-2 .float-2,
+.hero .content-2 .float-4 {
+  top: 60px;
+  animation-delay: 0.8s;
+}
+
+.hero .content-2 .float-3 {
+  animation-delay: 1.4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(-4deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(-2deg);
+  }
+
+  100% {
+    transform: translateY(8px) rotate(-6deg);
+  }
+}
+
+ main{
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 2.0;
+  padding: 10em 0;
+}
+
+main .cards{
+  display: flex;
+  margin-top: 5em;
+  gap: 3em;
+  text-align: center;
+}
+
+main .cards .card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover{
+  transform: translateY(-2%);
+}
+
+main .cards .card-1, .card-2, .card-3, .card-4{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: center;
+  border: 1px solid #00000038;
+  padding: 1em;
+  width: 250px;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+}
+
+main .cards span{
+  border-radius: 50%;
+  object-fit: cover;
+  font-size: 2em;
+  color: #fff;
+  width: 90px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto 1.5rem;
+}
+
+main .cards .card-1 span{
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+main .cards .card-2 span{
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+main .cards .card-3 span {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+main .cards .card-4 span {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+main p{
+  opacity: 0.5;
+}
+
+main h1{
+  font-size: 2.5em;
+}
+
+main .cards a{
+  text-decoration: none;
+  color: blue;
+  opacity: 0.5;
+}
+
+main .cards a:hover{
+  color: purple;
+}
+
+footer .footer{
+  display: flex;
+}
+
+footer{
+  background-color: #0f172a;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+footer .logo i{
+  font-size: 2em;
+}
+
+footer .cogen{
+  width: 400px;
+}
+
+footer .cogen p{
+  font-size: 12px;
+  margin-top: 1em;
+}
+
+footer .tools a,
+.resource a,
+.company a{
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+
+footer .tools, .resource, .company{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer .resource, .company, .follow{
+  padding-left: 10em;
+  padding-bottom: 3em;
+}
+
+footer .follow a{
+  background-color: #ffffff1a;
+  padding: 1em;
+  border-radius: 50%;
+  color: #fff;
+  transition-duration: 0.5s;
+}
+
+footer .follow a:hover{
+  background-color: #5050cf;
+  transform: translateY(-15%);
+}
+
+footer .follow h2{
+  padding-bottom: 1.5em;
+}
+
+footer a:hover{
+  opacity: 1;
+}
+
+footer .merit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+  line-height: 2.5;
+}
+
+footer .merit a{
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+
+footer .merit a:hover{
+  opacity: 1;
+}
+
+hr{
+  outline: 0.2px solid #ffffff1a;
+  border: none;
+}
+
+header input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width:1024px ) {
+  header nav {
+    position: absolute;
+    top: 70px;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(135deg, #667eea42 0%, #764ba291 100%);
+    left: 0;
+    transform: translateY(-300%);
+    transition-duration: 0.5s;
+    height: 100vh;
+    width: 100%;
+  }
+
+  body:has(#menu:checked) header nav {
+     transform: translateY(0);
+  }
+
+  header nav ul {
+    flex-direction: column;
+    line-height: 4.5;
+  }
+
+  header nav a {
+    font-size: 12px;
+  }
+
+  header label {
+    display: block;
+    border: 1px solid #fff4f4;
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+
+  header label:hover {
+    box-shadow: 0px 0px 11px 0px #fff;
+  }
+
+  header label .bar {
+    width: 20px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    margin: 3px;
+    transition-duration: 0.5s;
+  }
+
+  body:has(#menu:checked) header label .bar:nth-child(3) {
+    display: none;
+  }
+
+  body:has(#menu:checked) header label .bar:nth-child(1) {
+    transform: rotate(40deg) translate(3px, 0px);
+  }
+
+  body:has(#menu:checked) header label .bar:nth-child(2) {
+    transform: rotate(-40deg) translate(3px, -3px);
+  }
+
+  header nav ul li{
+    width: 100%;
+  }
+
+  .hero .content{
+    flex-direction: column;
+    gap: 10em;
+  }
+
+  main .cards{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+
+  footer .cogen{
+    width: 100%;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  footer .tools{
+    margin-top: 3em;
+  }
+
+footer .resource,
+.company,
+.follow {
+  padding: 0;
+  margin-top: 3em;
+}
+
+hr{
+  margin-top: 3em;
+}
+}
+
+@media (max-width: 425px) {
+  header{
+    padding: 10px;
+  }
+
+  .hero .content{
+    padding: 20em 5px;
+    text-align: center;
+  }
+
+  .hero .content-1 h1{
+    font-size: 25px;
+  }
+
+  .hero .content-1 p{
+    font-size: 12px;
+  }
+
+  .hero .content-1 a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .hero .content-1 .button{
+    justify-content: center;
+  }
+
+  .hero .content-1 .button a:nth-child(2):hover {
+    border-radius: 5px;
+  }
+
+  .hero .content{
+    gap: 5em;
+  }
+
+  .hero .content-2 div{
+    padding: 1em;
+  }
+
+  main h1{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 1em;
+  }
+
+  main > p{
+    font-size: 10px;
+    text-align: center;
+  }
+
+  main .cards{
+    grid-template-columns: repeat(1, minmax(120px, 1fr));
+  }
+
+  footer{
+    padding: 10px;
+  }
+}
