@@ -3,4 +3,4 @@ This is an educational replica of the Cogen - Professional Web Utilities </br> b
 </br>
 • The Code: 100% original, custom-written by me. </br>
 </br>
-• The Design: All intellectual property, assets, and design patterns belong </br> entirely to Oluwadimu Adedeji This project is not affiliated with them and is intended solely </br> for learning purposes.
+• The Design: All intellectual property, assets, and design patterns belong </br> entirely to <a href="https://oluwadimu-adedeji.web.app/"> Oluwadimu Adedeji</a> This project is not affiliated with them and is intended solely </br> for learning purposes.
