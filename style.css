@@ -8,7 +8,7 @@ body{
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: #fff;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 header{
